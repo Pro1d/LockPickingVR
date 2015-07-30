@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.awprog.lockpickingvr.MainActivity" >
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <ImageButton
+            android:id="@+id/ib_forward"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:src="@android:drawable/stat_sys_upload_done" />
+
+        <ImageButton
+            android:id="@+id/ib_backward"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:src="@android:drawable/stat_sys_download_done" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_values"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:shadowColor="#FFF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="4.0"
+        android:text="@string/hello_world"
+        android:textColor="#38F"
+        android:textSize="24sp" />
+
+</RelativeLayout>
