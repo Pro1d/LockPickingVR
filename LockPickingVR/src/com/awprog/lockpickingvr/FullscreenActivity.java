@@ -18,8 +18,6 @@ import com.fbessou.sofa.GameIOHandler.GamePadInputEvent;
 import com.fbessou.sofa.GameIOHandler.GamePadStateChangedEvent;
 import com.fbessou.sofa.GameIOHandler.StateChangedEventListener;
 import com.fbessou.sofa.GameInformation;
-import com.fbessou.sofa.GameMessageReceiver;
-import com.fbessou.sofa.StringSender;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -61,9 +59,6 @@ public class FullscreenActivity extends Activity implements KeyController, com.f
 	private KeyController mKeyController;
 	private Game game;
 	
-	GameMessageReceiver gameMsgReceiver = new GameMessageReceiver();
-	StringSender gameMsgSender;
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
